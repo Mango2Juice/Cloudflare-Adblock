@@ -49,8 +49,8 @@ class CloudflareManager:
             logger.warning("No domains found in the adlist file. Exiting script.")
             return 
         
-        # stop script if the number of final domains exceeds the limit
-        if len(domains) > 300000:
+        # stop script if the number of final domains exceeds the limit 300000
+        if len(domains) > 500000:
             logger.warning("The number of final domains exceeds the limit. Exiting script.")
             return
 
