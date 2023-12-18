@@ -50,7 +50,7 @@ class CloudflareManager:
             return 
         
         # stop script if the number of final domains exceeds the limit 300000
-        if len(domains) > 500000:
+        if len(domains) > 1500000:
             logger.warning("The number of final domains exceeds the limit. Exiting script.")
             return
 
